@@ -1,0 +1,183 @@
+/* Reseting */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/*  */
+
+/* wrapper */
+
+.wrapper {
+    position: relative;
+    background-image: url(/asset/img/bg-pc.jpg);
+    height: 160vw;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+
+
+/* nav  */
+.nav {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 26vw;
+    line-height: 5vw;
+
+}
+
+.nav_img {
+    width: 10.2vw;
+    height: 1.7vw;
+    min-width: 70px;
+}
+
+.nav_img:hover{
+        cursor: pointer;
+        transform: scale(1.02);
+        transition: all 0.5s ease;
+        filter: brightness(50%);
+}
+
+/* end nav  */
+
+
+/*download */
+.download {
+    position: absolute;
+    display: flex;
+    top: 45vw;
+    left: 50%;
+    transform: translate(-50%);
+
+}
+
+.download_img {
+    width: 13vw;
+    margin: 0 10px;
+}
+
+.download_img:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 0.6s ease;
+    filter: brightness(120%);
+}
+
+/* end download */
+
+
+
+
+/* character */
+.character {
+    position: absolute;
+    display: flex;
+    top: 67vw;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.character_img {
+    width: 60vw;
+    margin: 0 10px;
+}
+
+
+
+/* end character */
+
+/* social */
+
+.social {
+    position: absolute;
+    display: flex;
+    top: 144vw;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.social_img {
+    width: 7vw;
+    height: 6vw;
+    margin: 0 0.5vw;
+}
+
+.social_img:hover {
+
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 0.5s ease;
+    filter: brightness(120%);
+}
+
+
+/* end social */
+
+
+
+
+
+
+/* slider */
+
+.slider{
+    position: absolute;
+    display: flex;
+    top: 106.3vw;
+    left: 49.3%;
+    transform: translate(-50%);
+    width: 50vw;
+    height: 30vw;
+}
+
+.slider.slick-initialized.slick-slider {
+    display: flex;
+}
+button.slick-prev.slick-arrow {
+    background-color: transparent;
+}
+button.slick-next.slick-arrow {
+    background-color: transparent;
+}
+
+
+
+.slider_item {
+  
+  
+}
+
+.slider_item-img{
+    height: 30vw;
+  
+}
+
+
+
+
+/* end slider */
+
+
+.next-img{
+    width: 50px;
+    height: 50px;
+}
