@@ -46,6 +46,6 @@ $(document).ready(function(){
    slidesToScroll: 1,
    arrows: true,
    fade: true,
-   dots: true
+   dots: true,
  });
 
