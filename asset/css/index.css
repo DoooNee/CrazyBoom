@@ -139,10 +139,45 @@ a {
 
 /* slider */
 
-.container{
+.slider{
     position: absolute;
-    top: 110vw;
-    left: 50%;
+    display: flex;
+    top: 106.3vw;
+    left: 49.3%;
     transform: translate(-50%);
-    width: 60vw !important;
+    width: 50vw;
+    height: 30vw;
+}
+
+.slider.slick-initialized.slick-slider {
+    display: flex;
+}
+button.slick-prev.slick-arrow {
+    background-color: transparent;
+}
+button.slick-next.slick-arrow {
+    background-color: transparent;
+}
+
+
+
+.slider_item {
+  
+  
+}
+
+.slider_item-img{
+    height: 30vw;
+  
+}
+
+
+
+
+/* end slider */
+
+
+.next-img{
+    width: 50px;
+    height: 50px;
 }
