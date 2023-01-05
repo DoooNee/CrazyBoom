@@ -1,4 +1,3 @@
-
 //------- responsive mobile
 var jsVer = 15;
 var phoneWidth = parseInt(window.screen.width);
@@ -38,7 +37,15 @@ $(document).ready(function(){
         nextArrow: "<img class='next-img' src='/asset/img/caret-right-solid.svg' >",
         prevArrow: "<img class='next-img' src='/asset/img/caret-left-solid.svg' >",
       });   
-  });
+});
 
 
+
+ $('.slider-for').slick({
+   slidesToShow: 1,
+   slidesToScroll: 1,
+   arrows: true,
+   fade: true,
+   dots: true
+ });
 
