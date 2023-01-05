@@ -110,7 +110,7 @@ a {
 .social {
     position: absolute;
     display: flex;
-    top: 144vw;
+    top: 147vw;
     left: 50%;
     transform: translate(-50%);
 }
