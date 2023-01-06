@@ -249,20 +249,24 @@ a {
     .character-mb {
         display: block;
         position: absolute;
-        top: 50%;
+        top: 47%;
         left: 50%;
         transform: translate(-50%);
-        width: 70vw;
+        /* width: 83vw; */
+        width: 240px;
+
 
     }
 
-    .character-mb-item {}
+    .draggable {
+        padding: 0px!important;
+    }
 
 
 
     .character-mb-img {
-        width: 80px;
-        padding: 0 15px;
+        width: 60px;
+        padding: 0px 0px 0px 0px;
 
     }
 
@@ -298,7 +302,7 @@ a {
         transition: all 0.5s linear; 
         transform: translate(150%);
         width: 80%;
-
+        /* display: none; */
     }
 
     .boom-img img {
@@ -348,11 +352,15 @@ a {
 
     }
 
+    .slick {
+        /* overflow: hidden; */
+    }
 
     .demo-description {
         top: 391vw;
         width: 89vw;
         height: 59vw;
+        overflow: hidden;
     }
 
     .banner {
