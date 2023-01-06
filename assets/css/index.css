@@ -26,7 +26,7 @@ a {
 
 .wrapper {
     position: relative;
-    background-image: url(/asset/img/bg-pc.jpg);
+    background-image: url(/assets/img/bg-pc.jpg);
     height: 160vw;
     width: 100%;
     background-repeat: no-repeat;
@@ -84,27 +84,6 @@ a {
 
 /* end download */
 
-
-
-
-/* character */
-.character {
-    position: absolute;
-    display: flex;
-    top: 67vw;
-    left: 50%;
-    transform: translate(-50%);
-}
-
-.character_img {
-    width: 60vw;
-    margin: 0 10px;
-}
-
-
-
-/* end character */
-
 /* social */
 
 .social {
@@ -128,89 +107,7 @@ a {
     transition: all 0.5s ease;
     filter: brightness(120%);
 }
-
-
 /* end social */
-
-
-
-
-
-
-
-
-/* main-character */
-
-
-
-.main-character {
-    position: absolute;
-    top: 66vw;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 35vw;
-    margin: 0 auto;
-}
-
-.slider.slider-nav.slick-initialized.slick-slider {
-    display: flex;
-    align-items: center;
-}
-
-
-.slider-nav {
-    align-items: center;
-}
-
-
-.slick-slide img {
-    margin: 0 auto;
-}
-
-.next-img {
-    width: 3.8vw;
-    height: 3.8vw;
-    margin: 0 1vw;
-
-}
-
-.main-character-img {
-    width: 5vw;
-    margin: 0 1vw;
-    filter: grayscale(100%);
-
-
-}
-
-.slick-active img{
-    filter: grayscale(0%);
-}
-
-
-
-
-
-
-.slick-slide{
-}
-
-
-/* character-item */
-
-.character-item {
-    position: absolute;
-    top: 68vw;
-    left: 50%;
-    transform: translateX(-50%);
-    margin: 0 auto;
-}
-
-.slider-character-img {
-    width: 50vw;
-}
-
-
-/* main-character */
 
 
 .demo-description {
@@ -220,7 +117,7 @@ a {
     transform: translateX(-50%);
     width: 50vw;
     height: 35vw;
-    background-image: url(/asset/img/bg-p3.png);
+    background-image: url(/assets/img/bg-p3.png);
     background-repeat: no-repeat;
     background-size: 100%;
     padding-top: .7vw;
@@ -229,14 +126,14 @@ a {
 
 
 .banner {
-    width: 48vw;
+    /* width: 48vw; */
     height: 28vw;
 }
 
-.demo-description-item.slick-initialized.slick-slider {
-display: flex;
-}
-
-.demo-description-item{
-    align-items: center;
-}
+/*  */
+.main {
+    /* font-family:Arial; */
+    /* width:500px; */
+    display:block;
+    margin:0 auto;
+  }

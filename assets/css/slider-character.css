@@ -1,0 +1,39 @@
+.slider-character {
+    position: absolute;
+    top:41%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50vw;
+    display:block;
+    /* margin:0 auto; */
+}
+.slider-character.slider img {
+    height: 8vw;
+}
+
+.slider-character .slider-nav img {
+  filter: grayscale(1);
+  margin: 0 auto;
+  cursor: pointer;
+}
+.slider-character .slider-for {
+    animation: jump 1.5s linear alternate infinite;
+
+}
+
+.slider-character .slider-for img {
+  height: 18vw;
+  width: auto;
+  margin: 0 auto;
+}
+
+.slider-character .slider-nav .slick-current img {
+    filter: grayscale(0 );
+
+}
+
+@keyframes jump {
+    0%   {transform: translateY(0px)}
+    50%  {transform: translateY(-10px)}
+    100% {transform: translateY(-20px)}
+  }
