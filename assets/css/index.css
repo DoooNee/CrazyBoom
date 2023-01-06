@@ -107,6 +107,7 @@ a {
     transition: all 0.5s ease;
     filter: brightness(120%);
 }
+
 /* end social */
 
 
@@ -124,6 +125,38 @@ a {
 
 }
 
+.boom-img {
+    position: absolute;
+    bottom: 5vw;
+    left: -2vw;
+}
+
+.boom-img img {
+    width: 8vw;
+}
+
+.textur {
+    position: absolute;
+    top: -6vw;
+    left: -4vw;
+}
+
+.textur img {
+    width: 6vw;
+
+}
+
+
+.textur1 {
+    position: absolute;
+    bottom: 4vw;
+    right: -5.5vw;
+}
+
+.textur1 img {
+    width: 7vw;
+
+}
 
 .banner {
     /* width: 48vw; */
@@ -134,6 +167,223 @@ a {
 .main {
     /* font-family:Arial; */
     /* width:500px; */
-    display:block;
-    margin:0 auto;
-  }
+    display: block;
+    margin: 0 auto;
+}
+
+
+.download-mobile {
+    display: none;
+}
+
+.nav-mobile {
+    display: none;
+}
+
+.character-mb {
+    display: none;
+}
+
+.slider-for-mb {
+    display: none;
+}
+
+#btn-menu {
+    display: none;
+}
+
+.mob-mobile {
+    display: none;
+}
+
+
+
+
+/*MOBILE CSS */
+
+@media only screen and (max-width:767px) {
+    .wrapper {
+        display: none;
+    }
+
+    .wrapper-mobile {
+        position: relative;
+        background-image: url(/assets/img/mobile/bg-m.jpg);
+        width: 100%;
+        height: 500vw;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .nav-mobile {
+        display: block;
+        float: right;
+    }
+
+    .nav-mobile img {
+        width: 45px;
+        margin-right: 10px;
+        margin-top: 10px;
+    }
+
+
+    .download-mobile {
+        display: block;
+        position: absolute;
+        top: 650px;
+        left: 50%;
+        transform: translate(-50%);
+        text-align: center;
+    }
+
+    .downloads-mobile {
+        display: flex;
+    }
+
+    .download_img {
+        width: 40vw;
+    }
+
+
+
+    .character-mb {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%);
+        width: 70vw;
+
+    }
+
+    .character-mb-item {}
+
+
+
+    .character-mb-img {
+        width: 80px;
+        padding: 0 15px;
+
+    }
+
+    .slider-for-mb {
+        display: block;
+        position: absolute;
+        top: 54%;
+        left: 22%;
+        /* transform: translate(-50%); */
+        width: 72vw;
+    }
+
+    .slider-for-mb-img {
+        width: 270px;
+    }
+
+    .social {
+        top: 455vw;
+    }
+
+    .social img {
+        width: 15vw;
+        height: 13vw;
+
+    }
+
+    .mob-mobile {
+        position: absolute;
+        display: block;
+        z-index: 10;
+        right: 0;
+        height: 30%;
+        transition: all 0.5s linear; 
+        transform: translate(150%);
+        width: 80%;
+
+    }
+
+    .boom-img img {
+        width: 15vw;
+    }
+
+
+    .boom-img {
+        position: absolute;
+        bottom: 3vw;
+        left: -3vw;
+    }
+    .textur img {
+        width: 8vw;
+    
+    }
+    
+    
+  
+    
+    .textur1 img {
+        width: 8vw;
+    
+    }
+
+   
+
+
+    .mob-mobile img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .close {
+        position: absolute;
+        top: 0;
+        left: 2px;
+        background: transparent;
+        height: 45px;
+        width: 60px;
+    }
+
+
+    #btn-menu:checked~.mob-mobile {
+        transition: all 0.5s linear; 
+        transform: translate(0%);
+
+    }
+
+
+    .demo-description {
+        top: 391vw;
+        width: 89vw;
+        height: 59vw;
+    }
+
+    .banner {
+        /* width: 48vw; */
+        height: 52vw;
+    }
+
+
+    .nav-fan {
+        position: absolute;
+        left: 45px;
+        top: 50px;
+    }
+
+    .nav-fan img {
+        width: 120px;
+        height: 30px;
+        margin: 20px;
+        filter: grayscale(2);
+    }
+
+    .nav-fan img:hover {
+        filter: brightness(20%);
+    }
+
+
+
+
+
+
+
+
+
+}
