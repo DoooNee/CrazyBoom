@@ -50,11 +50,11 @@ a {
     min-width: 70px;
 }
 
-.nav_img:hover{
-        cursor: pointer;
-        transform: scale(1.02);
-        transition: all 0.5s ease;
-        filter: brightness(50%);
+.nav_img:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+    transition: all 0.5s ease;
+    filter: brightness(50%);
 }
 
 /* end nav  */
@@ -137,42 +137,106 @@ a {
 
 
 
-/* slider */
-.main {
+
+
+/* main-character */
+
+
+
+.main-character {
     position: absolute;
-    top: 68%;
+    top: 66vw;
     left: 50%;
     transform: translateX(-50%);
-    width: 59vw;
+    width: 35vw;
+    margin: 0 auto;
+}
+
+.slider.slider-nav.slick-initialized.slick-slider {
+    display: flex;
+    align-items: center;
+}
+
+
+.slider-nav {
+    align-items: center;
+}
+
+
+.slick-slide img {
+    margin: 0 auto;
+}
+
+.next-img {
+    width: 3.8vw;
+    height: 3.8vw;
+    margin: 0 1vw;
+
+}
+
+.main-character-img {
+    width: 5vw;
+    margin: 0 1vw;
+    filter: grayscale(100%);
+
+
+}
+
+.slick-active img{
+    filter: grayscale(0%);
+}
+
+
+
+
+
+
+.slick-slide{
+}
+
+
+/* character-item */
+
+.character-item {
+    position: absolute;
+    top: 68vw;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0 auto;
+}
+
+.slider-character-img {
+    width: 50vw;
+}
+
+
+/* main-character */
+
+
+.demo-description {
+    position: absolute;
+    top: 112vw;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50vw;
     height: 35vw;
-    /* display:block; */
-    /* margin:0 auto; */
     background-image: url(/asset/img/bg-p3.png);
     background-repeat: no-repeat;
     background-size: 100%;
-    padding-top: 1vw;
-  }
-
-
-.slider{
+    padding-top: .7vw;
 
 }
 
-.next-img{
-    width: 3rem;
-}
-.slider.slick-initialized.slick-slider {
-    display: flex;
-}
-button.slick-prev.slick-arrow {
-    background-color: transparent;
-}
-button.slick-next.slick-arrow {
-    background-color: transparent;
+
+.banner {
+    width: 48vw;
+    height: 28vw;
 }
 
+.demo-description-item.slick-initialized.slick-slider {
+display: flex;
+}
 
-.main .banner {
-    width: 58vw;
-    /* height: auto; */
+.demo-description-item{
+    align-items: center;
 }

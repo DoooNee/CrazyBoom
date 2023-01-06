@@ -29,23 +29,77 @@ if (phoneWidth < 768) {
 
 
 
-  
-$(document).ready(function(){
-  
-    $('.slider').slick({
-        infinite: true, 
+
+// $(document).ready(function(){
+
+//     $('.slider').slick({
+//         infinite: true, 
+//         nextArrow: "<img class='next-img' src='/asset/img/caret-right-solid.svg' >",
+//         prevArrow: "<img class='next-img' src='/asset/img/caret-left-solid.svg' >",
+//       });   
+// });
+
+
+
+//  $('.slider-for').slick({
+//    slidesToShow: 1,
+//    slidesToScroll: 1,
+//    arrows: true,
+//    fade: true,
+//    dots: true,
+//  });
+
+
+
+$(document).ready(function () {
+    $('.slider-for').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '.slider-nav',
+        autoplaySpeed :3000,
+        autoplay:true,
+    });
+
+
+    $('.slider-nav').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        asNavFor: '.slider-for',
+        dots: false,
+        focusOnSelect: true,
+        autoplaySpeed :3000,
+        autoplay:true,
+        nextArrow: "<img class='next-img' src='/asset/img/btn-next-off.png' >",
+        prevArrow: "<img class='next-img' src='/asset/img/btn-prev.png' >",
+    });
+
+    $('.demo-description-item').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
         nextArrow: "<img class='next-img' src='/asset/img/caret-right-solid.svg' >",
         prevArrow: "<img class='next-img' src='/asset/img/caret-left-solid.svg' >",
-      });   
-});
+    });
+
+
+})
 
 
 
- $('.slider-for').slick({
-   slidesToShow: 1,
-   slidesToScroll: 1,
-   arrows: true,
-   fade: true,
-   dots: true,
- });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
