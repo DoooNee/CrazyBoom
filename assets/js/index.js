@@ -30,4 +30,4 @@ $('.slider-banner').slick({
     slidesToScroll: 1,
     dots: true,
     focusOnSelect: true
-  });
+});
