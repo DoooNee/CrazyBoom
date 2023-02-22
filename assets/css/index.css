@@ -231,7 +231,7 @@ a {
     .download-mobile {
         display: block;
         position: absolute;
-        top: 650px;
+        top: 31%;
         left: 50%;
         transform: translate(-50%);
         text-align: center;
@@ -388,7 +388,10 @@ a {
     }
 
 
-
+    .slider-for-mb {
+        animation: jump 1.5s linear alternate infinite;
+      
+      }
 
 
 
