@@ -3,9 +3,8 @@ function showTrailer() {
 }
 
 
-function popupCommingSoon()
-{
-	show_result({ title: "Download link will be updated soon", msg: '' });return false;
+function popupCommingSoon() {
+    show_result({ title: "Download link will be updated soon", msg: '' }); return false;
 
 
 }
@@ -15,10 +14,10 @@ $('.slider-nav').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
     asNavFor: '.slider-for',
-    dots: true,
+    // dots: true,
     focusOnSelect: true,
-	prevArrow:"<img class='slick-prev slick-arrow btn-dieuhuong' src='/assets/img/mobile/btn-prev.png'>",
-    nextArrow:"<img class='slick-next slick-arrow btn-dieuhuong' src='/assets/img/mobile/btn-next-off.png'>"
+    prevArrow: "<img class='slick-prev slick-arrow btn-dieuhuong' src='/assets/img/mobile/btn-prev.png'>",
+    nextArrow: "<img class='slick-next slick-arrow btn-dieuhuong' src='/assets/img/mobile/btn-next-off.png'>"
 });
 
 $('.slider-for').slick({
@@ -44,9 +43,9 @@ $('.slider-banner').slick({
     slidesToScroll: 1,
     dots: true,
     focusOnSelect: true,
-	prevArrow:"<img class='slick-prev slick-arrow btn-dieuhuong' src='/assets/img/mobile/btn-prev.png'>",
-    nextArrow:"<img class='slick-next slick-arrow btn-dieuhuong' src='/assets/img/mobile/btn-next-off.png'>"
-  
+    prevArrow: "<img class='slick-prev slick-arrow btn-dieuhuong' src='/assets/img/mobile/btn-prev.png'>",
+    nextArrow: "<img class='slick-next slick-arrow btn-dieuhuong' src='/assets/img/mobile/btn-next-off.png'>"
+
 });
 
 
@@ -59,8 +58,8 @@ $('.character-mb-item').slick({
     dots: true,
     focusOnSelect: true,
     asNavFor: '.slider-for-mb',
-	prevArrow:"<img class='slick-prev slick-arrow btn-dieuhuong' src='/assets/img/mobile/btn-prev.png'>",
-    nextArrow:"<img class='slick-next slick-arrow btn-dieuhuong' src='/assets/img/mobile/btn-next-off.png'>"
+    prevArrow: "<img class='slick-prev slick-arrow btn-dieuhuong' src='/assets/img/mobile/btn-prev.png'>",
+    nextArrow: "<img class='slick-next slick-arrow btn-dieuhuong' src='/assets/img/mobile/btn-next-off.png'>"
 
 });
 

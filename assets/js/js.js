@@ -34,29 +34,29 @@ $('.slider-nav').slick({
     asNavFor: '.slider-for',
     dots: true,
     focusOnSelect: true
-    });
-    
-    $('.slider-for').slick({
+});
+
+$('.slider-for').slick({
     centerMode: true,
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
     fade: true,
     asNavFor: '.slider-nav'
-    });
-    
-    $('a[data-slide]').click(function(e) {
+});
+
+$('a[data-slide]').click(function (e) {
     e.preventDefault();
     var slideno = $(this).data('slide');
     $('.slider-nav').slick('slickGoTo', slideno - 1);
-    });
-    
-    
-    ///////
-    
-    $('.slider-banner').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        dots: true,
-        focusOnSelect: true
-      });
+});
+
+
+///////
+
+$('.slider-banner').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: true,
+    focusOnSelect: true
+});
