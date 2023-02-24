@@ -162,8 +162,8 @@ button.close.close-banner.close-popup-banner {
 }
 
 .social_img {
-    width: 7vw;
-    height: 6vw;
+    width: 5vw;
+    height: 5vw;
     margin: 0 0.5vw;
 }
 
@@ -173,6 +173,10 @@ button.close.close-banner.close-popup-banner {
     transform: scale(1.05);
     transition: all 0.5s ease;
     filter: brightness(120%);
+}
+
+.social-mb {
+    opacity: 0;
 }
 
 /* end social */
@@ -354,6 +358,11 @@ button.close.close-banner.close-popup-banner {
     }
 
 
+    .social-mb {
+        opacity: 1;
+    }
+
+
 
     .date-mob {
         display: block;
@@ -485,7 +494,7 @@ button.close.close-banner.close-popup-banner {
     }
 
     .social {
-        top: 455vw;
+        top: 460vw;
     }
 
     .social img {
@@ -633,6 +642,18 @@ button.close.close-banner.close-popup-banner {
 
 
 
+    /* dots slider mobile */
+
+    .demo-description .slick-dots li {
+        background-size: 110%;
+        width: 5vw;
+    }
+
+
+
+    .demo-description .slick-dots {
+        top: 208px;
+    }
 
 }
 

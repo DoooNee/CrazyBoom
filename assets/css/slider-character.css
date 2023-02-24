@@ -57,6 +57,27 @@ img.slider-character-img {
 }
 
 
+
+/* dots slider */
+
+.demo-description .slick-dots li {
+  background-image: url(/assets/img/step-off.png);
+  background-repeat: no-repeat;
+  width: 2vw;
+  background-size: 81%;
+}
+
+.demo-description .slick-dots li.slick-active {
+  background-image: url(/assets/img/step-on.png);
+}
+
+
+.slick-dots {
+  bottom: -2vw;
+
+}
+
+
 @keyframes jump {
   0% {
     transform: translateY(0px)
