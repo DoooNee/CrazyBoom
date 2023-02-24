@@ -128,3 +128,21 @@ function show_result(response, callback) {
         });
     }, 200);
 }
+
+
+// check PC
+function clickPc() {
+    console.log("ok callback");
+
+
+    $.ajax({
+        url: 'tracking.php',
+        type: 'POST',
+        data: {
+            type:"pc"
+        },
+        success: function (data) {
+            console.log("success")
+        }
+    });
+}
