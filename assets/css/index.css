@@ -668,3 +668,91 @@ button.close.close-banner.close-popup-banner {
         transform: scale(1);
     }
 }
+
+
+/* ----------------VN------------------- */
+
+.wrapper_global {
+    display: none;
+}
+
+.wrapper_vn {
+    /* display: none; */
+
+}
+
+.wrapper_vn .wrapper {
+    background-image: url(/assets/img/img_vie/bg_pc_vie.jpg);
+}
+
+.wrapper_vn .date {
+    display: none;
+}
+
+.wrapper_vn .btn-trailer {
+    top: 11.5%;
+}
+
+
+.wrapper_vn .nav_img {
+    width: 10.2vw;
+}
+
+.wrapper_vn .nav_guidline img {
+    width: 12vw;
+    margin-top: -0.7vw;
+
+}
+
+.wrapper_vn .nav_community img {
+    width: 12vw;
+    margin-top: -0.5vw;
+
+
+}
+
+.wrapper_vn .slider-character {}
+
+.characters {
+    position: absolute;
+    background-image: url(/assets/img/img_vie/22+_vie.png);
+    width: 5vw;
+    height: 5vw;
+    top: 0;
+    right: -3vw;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.wrapper_vn .slider-character .slider-for img {
+    height: 18vw;
+    margin-left: 4vw !important;
+}
+
+
+.close {
+    position: absolute;
+    top: 0;
+    left: 2px;
+    background: transparent;
+    height: 45px;
+    width: 60px;
+}
+
+
+#btn:checked~.mob-mobile {
+    transition: all 0.5s linear;
+    transform: translate(0%);
+
+}
+
+
+.wrapper_vn  .slick-list.draggable {
+    width: 100%;
+}
+
+
+.wrapper_vn  .slider.slider-nav.slick-initialized.slick-slider.slick-dotted {
+    width: 87%;
+
+}
