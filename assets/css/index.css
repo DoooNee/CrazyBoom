@@ -23,7 +23,6 @@ a {
 /*  */
 
 /* wrapper */
-
 .wrapper {
     position: relative;
     background-image: url(/assets/img/bg-pc4.jpg);
@@ -33,7 +32,6 @@ a {
     background-repeat: no-repeat;
     background-size: 100%;
 }
-
 
 
 /* nav  */
@@ -125,6 +123,22 @@ video {
 
 button.close.close-banner.close-popup-banner {
     transform: translateX(50px);
+}
+
+
+.characters_global{
+    position: absolute;
+    background-image: url(/assets/img/22+.png);
+    width: 5vw;
+    height: 5vw;
+    top: 0;
+    right: -3vw;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.slick-slide.slick-current.slick-active {
+    top: -1.5vw !important;
 }
 
 /*download */
@@ -673,11 +687,11 @@ button.close.close-banner.close-popup-banner {
 /* ----------------VN------------------- */
 
 .wrapper_global {
-    display: none;
+    display: block;
 }
 
 .wrapper_vn {
-    /* display: none; */
+    display: none;
 
 }
 
@@ -724,20 +738,13 @@ button.close.close-banner.close-popup-banner {
     background-repeat: no-repeat;
 }
 
+
 .wrapper_vn .slider-character .slider-for img {
     height: 18vw;
     margin-left: 4vw !important;
 }
 
 
-.close {
-    position: absolute;
-    top: 0;
-    left: 2px;
-    background: transparent;
-    height: 45px;
-    width: 60px;
-}
 
 
 #btn:checked~.mob-mobile {
@@ -747,12 +754,15 @@ button.close.close-banner.close-popup-banner {
 }
 
 
-.wrapper_vn  .slick-list.draggable {
-    width: 100%;
-}
 
 
-.wrapper_vn  .slider.slider-nav.slick-initialized.slick-slider.slick-dotted {
+.slider.slider-nav.slick-initialized.slick-slider.slick-dotted {
     width: 87%;
 
 }
+
+
+.slick-list.draggable {
+    width: 100%;
+}
+
