@@ -129,19 +129,31 @@ function show_result(response, callback) {
 }
 
 
-// check PC
-function clickPc() {
-    console.log("ok callback");
 
 
+// tracking download
+function tracking_download(type) {
     $.ajax({
-        url: 'tracking.php',
+        url: 'backend/tracking_download.php',
         type: 'POST',
         data: {
-            type: "pc"
+            type:"pc"
         },
         success: function (data) {
-            console.log("success")
+            console.log(data);
+           
+            console.log(type);
+            if(type == 'pc'){
+              console.log(type);
+              //window.location.href = "https://drive.google.com/file/d/1iPihKEssv6g89jiz-mPDJN3j4HGWjK-i/view?usp=sharing";
+              //window.open("https://ninja.vngates.com/crazyboom/CrazyBoomPC.exe");
+              window.location.href = 'https://ninja.vngates.com/crazyboom/CrazyBoomPC.exe';
+            }
+            if(type == 'android'){
+              console.log(type);
+              //window.open("https://ninja.vngates.com/crazyboom/CrazyBoom_AT.apk");
+              window.location.href = 'https://ninja.vngates.com/crazyboom/CrazyBoom_AT.apk';
+            }
         }
     });
 }   
