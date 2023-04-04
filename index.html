@@ -9,9 +9,9 @@
     <title>Crazy Boom</title>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
-    <script type="text/javascript" src="/assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script type="text/javascript" src="/assets/bootstrap/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
         integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -21,11 +21,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
         integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <link rel="stylesheet" href="/assets/css/slider-character.css?v=0.0.1">
-    <link rel="stylesheet" href="/assets/css/index.css?v=0.6.9">
-
-    <!-- Google Tag Manager -->
-    <script>(function (w, d, s, l, i) {
+    <link rel="stylesheet" href="/assets/css/slider-character.css?v=0.0.2">
+    <link rel="stylesheet" href="/assets/css/index.css?v=0.7.0">
+  
+  <!-- Google Tag Manager -->
+<script>(function (w, d, s, l, i) {
             w[l] = w[l] || []; w[l].push({
                 'gtm.start':
                     new Date().getTime(), event: 'gtm.js'
@@ -33,26 +33,44 @@
                 j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
                     'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
         })(window, document, 'script', 'dataLayer', 'GTM-W8P7B3Z');</script>
-    <!-- End Google Tag Manager -->
+<!-- End Google Tag Manager -->
+  
+ <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-V7GSSH7PTT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-V7GSSH7PTT"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
+  gtag('config', 'G-V7GSSH7PTT');
+</script>
 
-        gtag('config', 'G-V7GSSH7PTT');
-    </script>
-
+  
+  <!-- Meta Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1620197865083686');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1620197865083686&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
 
 </head>
 
 <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W8P7B3Z" height="0" width="0"
-            style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
+  <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W8P7B3Z"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 
     <!-- PC -->
     <div class="wrapper">
@@ -75,9 +93,9 @@
         </div>
 
         <div class="download">
-            <a href="javascript: popupCommingSoon();"> <img class="download_img" src="/assets/img/btn-pc2.png"
+            <a href="javascript: tracking_download('pc');"> <img class="download_img" src="/assets/img/btn-pc2.png"
                     alt=""></a>
-            <a href="javascript: popupCommingSoon();"> <img class="download_img" src="/assets/img/btn-apk.png"
+            <a href="javascript: tracking_download('android');"> <img class="download_img" src="/assets/img/btn-apk.png"
                     alt=""></a>
             <!--   <a href="javascript: popupCommingSoon();"> <img class="download_img" src="/assets/img/btn-ios2.png" alt=""></a>
             <a href="javascript: popupCommingSoon();"> <img class="download_img" src="/assets/img/btn-android2.png" alt=""></a> -->
@@ -142,7 +160,7 @@
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         allowfullscreen></iframe></div>
                 <div>
-                    <iframe src="https://www.youtube.com/embed/EXEBnr13Fmo?rel=0" title="YouTube video player"
+                    <iframe src="https://www.youtube.com/embed/EXEBnr13Fmo?rel=0" title="YouTube video player" 
                         frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         allowfullscreen></iframe>
@@ -152,7 +170,7 @@
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         allowfullscreen></iframe></div>
                 <div>
-                    <iframe src="https://www.youtube.com/embed/IvW24NXV5_8?rel=0" title="YouTube video player"
+                    <iframe src="https://www.youtube.com/embed/IvW24NXV5_8?rel=0" title="YouTube video player" 
                         frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         allowfullscreen></iframe>
@@ -177,7 +195,7 @@
     </div>
     <!-- END  PC -->
 
-
+  
     <!-- MOBILE  -->
     <div class="wrapper-mobile">
         <label for="btn-menu" class="nav-mobile">
@@ -212,9 +230,9 @@
                 <a href="javascript: popupCommingSoon();"> <img class="download_img" src="/assets/img/btn-android2.png" alt=""></a>
             </div>  -->
 
-            <a href="javascript: popupCommingSoon();"> <img class="download_img" src="/assets/img/btn-pc2.png"
+            <a href="javascript: tracking_download('pc');"> <img class="download_img" src="/assets/img/btn-pc2.png"
                     alt=""></a>
-            <a href="javascript: popupCommingSoon();"> <img class="download_img" src="/assets/img/btn-apk.png"
+            <a href="javascript: tracking_download('android');"> <img class="download_img" src="/assets/img/btn-apk.png"
                     alt=""></a>
 
         </div>
@@ -250,7 +268,6 @@
             <div class="socaial_community"><a target="blank"
                     href="https://www.facebook.com/groups/crazyboomcommunity"><img class="social_img"
                         src="/assets/img/btn-community.png" alt=""></a></div>
-
             <div class="socaial_youtube"><a target="blank"
                     href="https://www.youtube.com/@crazyboomofficial/featured"><img class="social_img"
                         src="/assets/img/btn-youtube.png" alt=""></a>
@@ -258,10 +275,9 @@
             <div class="socaial_discord"><a target="blank" href="https://discord.com/invite/hNqwPRBSKd"><img
                         class="social_img" src="/assets/img/btn-discord.png" alt=""></a>
             </div>
-
-            <div class="socaial_telegram"><a target="blank" href="https://t.me/crazyboom_announcement"><img
+          <div class="socaial_telegram"><a target="blank" href="https://t.me/crazyboom_announcement"><img
                 class="social_img" src="/assets/img/btn-telegram.png" alt=""></a>
-    </div>
+            </div>
         </div>
 
         <div class="demo-description demo-description-mb">
@@ -276,7 +292,7 @@
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         allowfullscreen></iframe></div>
                 <div>
-                    <iframe src="https://www.youtube.com/embed/EXEBnr13Fmo?rel=0" title="YouTube video player"
+                    <iframe src="https://www.youtube.com/embed/EXEBnr13Fmo?rel=0" title="YouTube video player" 
                         frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         allowfullscreen></iframe>
@@ -286,7 +302,7 @@
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         allowfullscreen></iframe></div>
                 <div>
-                    <iframe src="https://www.youtube.com/embed/IvW24NXV5_8?rel=0" title="YouTube video player"
+                    <iframe src="https://www.youtube.com/embed/IvW24NXV5_8?rel=0" title="YouTube video player" 
                         frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         allowfullscreen></iframe>
@@ -310,8 +326,8 @@
         </div>
     </div>
     <!--END MOBILE  -->
-
-
+              
+              
     <!-- poppup video trailer -->
     <div class="modal fade" id="Modalbanner" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
         aria-hidden="true">
@@ -335,7 +351,7 @@
                             </iframe>
 
 
-
+                         
                             <!--<video  controls>
                             <source src="/assets/img/Trailer.mp4" type="video/mp4">
                             
@@ -349,7 +365,7 @@
     </div>
     <!-- end popup video trailer -->
 
-    <script src="/assets/js/index.js?v=0.1.4"></script>
+    <script src="/assets/js/index.js?v=0.2.7"></script>
 </body>
 
 </html>
