@@ -43,7 +43,7 @@ img.slider-character-img {
 }
 
 .slider-character .slider-for img {
-  height: 20vw;
+  height: 19vw;
   width: auto;
   margin: 0 auto;
 }
@@ -76,6 +76,22 @@ img.slider-character-img {
   bottom: -2vw;
 
 }
+
+/* slider character */
+.characters_global{
+  position: absolute;
+  background-image: url(/assets/img/22+.png);
+  width: 5vw;
+  height: 5vw;
+  top: 0;
+  right: -3vw;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+
+
+/* end  slider character  */
 
 
 @keyframes jump {

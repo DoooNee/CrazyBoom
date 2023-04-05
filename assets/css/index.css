@@ -126,20 +126,6 @@ button.close.close-banner.close-popup-banner {
 }
 
 
-.characters_global{
-    position: absolute;
-    background-image: url(/assets/img/22+.png);
-    width: 5vw;
-    height: 5vw;
-    top: 0;
-    right: -3vw;
-    background-size: 100%;
-    background-repeat: no-repeat;
-}
-
-.slick-slide.slick-current.slick-active {
-    top: -1.5vw !important;
-}
 
 /*download */
 .download {
@@ -687,7 +673,7 @@ button.close.close-banner.close-popup-banner {
 /* ----------------VN------------------- */
 
 .wrapper_global {
-    display: block;
+    /* display: none; */
 }
 
 .wrapper_vn {
@@ -699,7 +685,7 @@ button.close.close-banner.close-popup-banner {
     background-image: url(/assets/img/img_vie/bg_pc_vie.jpg);
 }
 
-.wrapper_vn .date {
+.date {
     display: none;
 }
 
