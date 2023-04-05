@@ -328,7 +328,6 @@ button.close.close-banner.close-popup-banner {
 
 
 
-
 /*MOBILE CSS */
 
 @media only screen and (max-width:767px) {
@@ -657,6 +656,13 @@ button.close.close-banner.close-popup-banner {
 
 }
 
+@media only screen and (min-width:768px) {
+    .mb_characters {
+        display: none;
+    }
+}
+
+
 
 
 @keyframes animationScale {
@@ -675,6 +681,8 @@ button.close.close-banner.close-popup-banner {
 .wrapper_global {
     display: none;
 }
+
+
 
 .wrapper_vn {
     /* display: none; */
@@ -775,7 +783,7 @@ button.close.close-banner.close-popup-banner {
 
 }
 
-.mb_characters {
+.wrapper_vn .mb_characters {
     position: absolute;
     background-image: url(/assets/img/img_vie/22+_vie.png);
     width: 15vw;
@@ -785,6 +793,8 @@ button.close.close-banner.close-popup-banner {
     background-size: 100%;
     background-repeat: no-repeat;
 }
+
+
 
 img.vn_nav_guideline {
     width: 42vw;
@@ -796,6 +806,7 @@ img.vn_nav_community {
     width: 44vw;
     height: 12vw;
 }
+
 /* ----------------VN MB-------------- */
 
 
