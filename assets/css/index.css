@@ -670,7 +670,7 @@ button.close.close-banner.close-popup-banner {
 }
 
 
-/* ----------------VN------------------- */
+/* ------------------------------VN-------------------------- */
 
 .wrapper_global {
     display: none;
@@ -751,3 +751,56 @@ button.close.close-banner.close-popup-banner {
     width: 100%;
 }
 
+
+
+/* ----------------VN MB-------------- */
+.wrapper_vn .wrapper-mobile {
+    background-image: url(/assets/img/nv-m/Mobile_VIE.jpg);
+
+}
+
+.wrapper_vn .character-mb-item.slick-initialized.slick-slider.slick-dotted {
+    width: 98%;
+
+}
+
+.wrapper_vn .character-mb {
+    margin-left: -7%;
+}
+
+
+.wrapper_vn .slick-dots {
+    width: 110%;
+    bottom: -4vw;
+
+}
+
+.mb_characters {
+    position: absolute;
+    background-image: url(/assets/img/img_vie/22+_vie.png);
+    width: 15vw;
+    height: 15vw;
+    top: 47%;
+    right: 3vw;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+img.vn_nav_guideline {
+    width: 42vw;
+    height: 10vw;
+}
+
+
+img.vn_nav_community {
+    width: 44vw;
+    height: 12vw;
+}
+/* ----------------VN MB-------------- */
+
+
+
+
+
+
+/* ------------------------------VN-------------------------- */
