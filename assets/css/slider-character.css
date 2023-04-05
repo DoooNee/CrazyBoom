@@ -32,7 +32,7 @@ img.slider-character-img {
 }
 
 .slider.slider-for.slick-initialized.slick-slider {
-  margin-top: 4vw;
+  margin-top: 2vw;
 }
 
 
@@ -43,7 +43,7 @@ img.slider-character-img {
 }
 
 .slider-character .slider-for img {
-  height: 19vw;
+  height: 21vw;
   width: auto;
   margin: 0 auto;
 }

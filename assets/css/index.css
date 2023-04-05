@@ -673,11 +673,11 @@ button.close.close-banner.close-popup-banner {
 /* ----------------VN------------------- */
 
 .wrapper_global {
-    /* display: none; */
+    display: none;
 }
 
 .wrapper_vn {
-    display: none;
+    /* display: none; */
 
 }
 
@@ -726,8 +726,7 @@ button.close.close-banner.close-popup-banner {
 
 
 .wrapper_vn .slider-character .slider-for img {
-    height: 18vw;
-    margin-left: 4vw !important;
+    height: 21vw;
 }
 
 
