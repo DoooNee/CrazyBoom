@@ -1,3 +1,21 @@
+$( document ).ready(function() {
+    $.get("https://api.country.is", function(response) {
+         console.log(response.country);
+        if(response.country == "VN"){
+            $(".wrapper_vn").removeAttr("style").show();
+            $(".wrapper_global").removeAttr("style").hide();
+             console.log("1");
+        }
+        else {
+            $(".wrapper_vn").removeAttr("style").hide();
+            $(".wrapper_global").removeAttr("style").show();
+             console.log("2");
+
+        }
+    });
+    
+});
+
 function showTrailer() {
     $('#Modalbanner').modal('toggle');
 }
