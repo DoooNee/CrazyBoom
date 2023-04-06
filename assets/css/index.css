@@ -25,7 +25,7 @@ a {
 /* wrapper */
 .wrapper {
     position: relative;
-    background-image: url(/assets/img/bg-pc4.jpg);
+    background-image: url(/assets/img/bg_pc_glo.webp);
     height: 163vw;
     width: 100%;
     background-color: #88ae3f;
@@ -156,7 +156,7 @@ button.close.close-banner.close-popup-banner {
 .social {
     position: absolute;
     display: flex;
-    top: 145vw;
+    top: 148vw;
     left: 50%;
     transform: translate(-50%);
 }
@@ -369,7 +369,7 @@ button.close.close-banner.close-popup-banner {
 
     .wrapper-mobile {
         position: relative;
-        background-image: url(/assets/img/mobile/bg-m4.jpg);
+        background-image: url(/assets/img/mobile/bg_m_glo.webp);
         width: 100%;
         height: 500vw;
         background-repeat: no-repeat;
@@ -690,7 +690,7 @@ button.close.close-banner.close-popup-banner {
 }
 
 .wrapper_vn .wrapper {
-    background-image: url(/assets/img/img_vie/bg_pc_vie.jpg);
+    background-image: url(/assets/img/img_vie/bg_pc_vie.webp);
 }
 
 .date {
@@ -763,7 +763,7 @@ button.close.close-banner.close-popup-banner {
 
 /* ----------------VN MB-------------- */
 .wrapper_vn .wrapper-mobile {
-    background-image: url(/assets/img/nv-m/Mobile_VIE.jpg);
+    background-image: url(/assets/img/nv-m/Mobile_VIE.webp);
 
 }
 
