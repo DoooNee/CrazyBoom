@@ -65,6 +65,41 @@ a {
 }
 
 /* end nav  */
+
+/* translate */
+.wrapper_translate {
+    position: absolute;
+    top: 0.7vw;
+    right: 5%;
+    display: flex;
+}
+
+.translate {
+    padding: 0.5vw;
+    background: #555555;
+    margin: 0 5px;
+    font-weight: 700;
+    border-radius: 5px;
+    font-size: 1vw;
+}
+
+.translate:hover {
+    background: #2e2d2d;
+    cursor: pointer;
+
+}
+
+.translate a {
+    color: white;
+    text-decoration: none;
+}
+
+
+/* end translate */
+
+
+
+
 /*btn trailer*/
 .btn-trailer-m {
     display: none;
@@ -593,12 +628,21 @@ button.close.close-banner.close-popup-banner {
         left: 45px;
         top: 50px;
     }
+    
+
+    .translates{
+        color: #333;
+        margin: 0px 20px;
+        line-height: 2.5rem;
+    }
+
 
     .nav-fan img {
         width: 120px;
         height: 30px;
         margin: 20px;
         filter: grayscale(2);
+
     }
 
     .nav-fan img:hover {
@@ -679,13 +723,13 @@ button.close.close-banner.close-popup-banner {
 /* ------------------------------VN-------------------------- */
 
 .wrapper_global {
-    display: none;
+    /* display: none; */
 }
 
 
 
 .wrapper_vn {
-    /* display: none; */
+    display: none;
 
 }
 
@@ -778,7 +822,6 @@ button.close.close-banner.close-popup-banner {
 
 
 .wrapper_vn .slick-dots {
-    width: 110%;
     bottom: -4vw;
 
 }

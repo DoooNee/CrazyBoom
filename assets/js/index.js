@@ -1,20 +1,55 @@
-$( document ).ready(function() {
-    $.get("https://api.country.is", function(response) {
-         console.log(response.country);
-        if(response.country == "VN"){
-            $(".wrapper_vn").removeAttr("style").show();
-            $(".wrapper_global").removeAttr("style").hide();
-             console.log("1");
-        }
-        else {
-            $(".wrapper_vn").removeAttr("style").hide();
-            $(".wrapper_global").removeAttr("style").show();
-             console.log("2");
+$(document).ready(function () {
+    // $.get("https://api.country.is", function(response) {
+    //      console.log(response.country);
+    //     if(response.country == "VN"){
+    //         $(".wrapper_vn").removeAttr("style").show();
+    //         $(".wrapper_global").removeAttr("style").hide();
+    //          console.log("1");
+    //     }
+    //     else {
+    //         $(".wrapper_vn").removeAttr("style").hide();
+    //         $(".wrapper_global").removeAttr("style").show();
+    //          console.log("2");
 
-        }
-    });
-    
+    //     }
+    // });
+    checkLanguages();
 });
+
+//show tiếng việt
+function showVN() {
+    $(".wrapper_vn").removeAttr("style").show();
+    $(".wrapper_global").removeAttr("style").hide();
+}
+
+//show tiếng anh
+
+function showEN() {
+    $(".wrapper_vn").removeAttr("style").hide();
+    $(".wrapper_global").removeAttr("style").show();
+}
+
+//check localStorage
+function checkLanguages() {
+
+    $(".vi").click(function () {
+        localStorage.setItem("VN", "VN");
+    })
+
+    $(".en").click(function () {
+        localStorage.setItem("VN", "EN");
+    })
+
+    if (localStorage.getItem("VN") == "EN") {
+        showEN();
+    } else {
+        showVN();
+
+    }
+
+
+}
+
 
 function showTrailer() {
     $('#Modalbanner').modal('toggle');
@@ -155,23 +190,29 @@ function tracking_download(type) {
         url: 'backend/tracking_download.php',
         type: 'POST',
         data: {
-            type:"pc"
+            type: "pc"
         },
         success: function (data) {
             console.log(data);
-           
+
             console.log(type);
-            if(type == 'pc'){
-              console.log(type);
-              //window.location.href = "https://drive.google.com/file/d/1iPihKEssv6g89jiz-mPDJN3j4HGWjK-i/view?usp=sharing";
-              //window.open("https://ninja.vngates.com/crazyboom/CrazyBoomPC.exe");
-              window.location.href = 'https://ninja.vngates.com/crazyboom/CrazyBoomPC.exe';
+            if (type == 'pc') {
+                console.log(type);
+                //window.location.href = "https://drive.google.com/file/d/1iPihKEssv6g89jiz-mPDJN3j4HGWjK-i/view?usp=sharing";
+                //window.open("https://ninja.vngates.com/crazyboom/CrazyBoomPC.exe");
+                window.location.href = 'https://ninja.vngates.com/crazyboom/CrazyBoomPC.exe';
             }
-            if(type == 'android'){
-              console.log(type);
-              //window.open("https://ninja.vngates.com/crazyboom/CrazyBoom_AT.apk");
-              window.location.href = 'https://ninja.vngates.com/crazyboom/CrazyBoom_AT.apk';
+            if (type == 'android') {
+                console.log(type);
+                //window.open("https://ninja.vngates.com/crazyboom/CrazyBoom_AT.apk");
+                window.location.href = 'https://ninja.vngates.com/crazyboom/CrazyBoom_AT.apk';
             }
         }
     });
-}   
+}
+
+
+
+function popupDownload() {
+    swal("Link Tải Sẽ Sớm Được Cập Nhập!", "");
+}
