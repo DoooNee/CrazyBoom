@@ -17,6 +17,12 @@ li {
 
 a {
     text-decoration: none;
+
+}
+
+a:hover {
+    color: #868282;
+    text-decoration: none;
 }
 
 
@@ -597,6 +603,8 @@ button.close.close-banner.close-popup-banner {
         background: transparent;
         height: 45px;
         width: 60px;
+        text-shadow: none;
+
     }
 
 
@@ -628,12 +636,14 @@ button.close.close-banner.close-popup-banner {
         left: 45px;
         top: 50px;
     }
-    
 
-    .translates{
-        color: #333;
+
+    .translates {
+        color: #888585;
         margin: 0px 20px;
         line-height: 2.5rem;
+        font-weight: 800;
+
     }
 
 
