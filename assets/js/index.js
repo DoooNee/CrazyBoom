@@ -1,51 +1,53 @@
 $(document).ready(function () {
-    // $.get("https://api.country.is", function(response) {
-    //      console.log(response.country);
-    //     if(response.country == "VN"){
-    //         $(".wrapper_vn").removeAttr("style").show();
-    //         $(".wrapper_global").removeAttr("style").hide();
-    //          console.log("1");
-    //     }
-    //     else {
-    //         $(".wrapper_vn").removeAttr("style").hide();
-    //         $(".wrapper_global").removeAttr("style").show();
-    //          console.log("2");
-
-    //     }
-    // });
     checkLanguages();
 });
 
 //show tiếng việt
 function showVN() {
-    $(".wrapper_vn").removeAttr("style").show();
-    $(".wrapper_global").removeAttr("style").hide();
+    localStorage.setItem("VN", "VN");
+    // $(".wrapper_vn").removeAttr("style").show();
+    // $(".wrapper_global").removeAttr("style").hide();
+    location.reload();
 }
 
 //show tiếng anh
 
 function showEN() {
-    $(".wrapper_vn").removeAttr("style").hide();
-    $(".wrapper_global").removeAttr("style").show();
+    localStorage.setItem("VN", "EN");
+    // $(".wrapper_vn").removeAttr("style").hide();
+    // $(".wrapper_global").removeAttr("style").show();
+    location.reload();
 }
+
+
+// $(".vi").click(function () {
+//     localStorage.setItem("VN", "VN");
+//     console.log("vn");
+// })
+
+// $(".en").click(function () {
+//     localStorage.setItem("VN", "EN");
+//     console.log("en");
+
+// })
 
 //check localStorage
 function checkLanguages() {
+    var lang = localStorage.getItem("VN");
+    // localStorage.getItem("VN")
+    console.log(lang);
 
-    $(".vi").click(function () {
-        localStorage.setItem("VN", "VN");
-    })
-
-    $(".en").click(function () {
-        localStorage.setItem("VN", "EN");
-    })
-
-    if (localStorage.getItem("VN") == "EN") {
-        showEN();
-    } else {
-        showVN();
-
+    if(lang == 'EN'){
+        $(".wrapper_vn").removeAttr("style").hide();
+        $(".wrapper_global").removeAttr("style").show();
     }
+
+    else {
+        $(".wrapper_vn").removeAttr("style").show();
+        $(".wrapper_global").removeAttr("style").hide();
+    }
+    
+
 
 
 }
