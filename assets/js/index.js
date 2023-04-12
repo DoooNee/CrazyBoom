@@ -18,6 +18,9 @@ function showEN() {
 
 //check localStorage
 function checkLanguages() {
+    var lang = localStorage.getItem("VN");
+
+
     if(lang == 'EN'){
         $(".wrapper_vn").removeAttr("style").hide();
         $(".wrapper_global").removeAttr("style").show();
@@ -38,7 +41,6 @@ function showTrailer() {
 
 function popupCommingSoon() {
     show_result({ title: "Download link will be updated soon", msg: '' }); return false;
-
 
 }
 
