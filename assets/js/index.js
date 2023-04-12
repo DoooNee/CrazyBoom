@@ -5,8 +5,6 @@ $(document).ready(function () {
 //show tiếng việt
 function showVN() {
     localStorage.setItem("VN", "VN");
-    // $(".wrapper_vn").removeAttr("style").show();
-    // $(".wrapper_global").removeAttr("style").hide();
     location.reload();
 }
 
@@ -14,41 +12,21 @@ function showVN() {
 
 function showEN() {
     localStorage.setItem("VN", "EN");
-    // $(".wrapper_vn").removeAttr("style").hide();
-    // $(".wrapper_global").removeAttr("style").show();
     location.reload();
 }
 
 
-// $(".vi").click(function () {
-//     localStorage.setItem("VN", "VN");
-//     console.log("vn");
-// })
-
-// $(".en").click(function () {
-//     localStorage.setItem("VN", "EN");
-//     console.log("en");
-
-// })
-
 //check localStorage
 function checkLanguages() {
-    var lang = localStorage.getItem("VN");
-    // localStorage.getItem("VN")
-    console.log(lang);
-
     if(lang == 'EN'){
         $(".wrapper_vn").removeAttr("style").hide();
         $(".wrapper_global").removeAttr("style").show();
     }
-
     else {
         $(".wrapper_vn").removeAttr("style").show();
         $(".wrapper_global").removeAttr("style").hide();
     }
     
-
-
 
 }
 
