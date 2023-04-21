@@ -24,10 +24,13 @@ function checkLanguages() {
     if(lang == 'EN'){
         $(".wrapper_vn").removeAttr("style").hide();
         $(".wrapper_global").removeAttr("style").show();
+      	$(".en a").css("background", "#ff0000");
+      	
     }
     else {
         $(".wrapper_vn").removeAttr("style").show();
         $(".wrapper_global").removeAttr("style").hide();
+      	$(".vi a").css("background", "#ff0000");
     }
     
 
