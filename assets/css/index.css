@@ -175,7 +175,7 @@ button.close.close-banner.close-popup-banner {
 .download {
     position: absolute;
     display: flex;
-    top: 45vw;
+    top: 47vw;
     left: 50%;
     transform: translate(-50%);
 
@@ -185,6 +185,16 @@ button.close.close-banner.close-popup-banner {
     width: 13vw;
     margin: 0 10px;
 }
+
+
+.download_button_napthe {
+    width: 8vw;
+    margin-top: -3vw;
+    margin-left: 1vw;
+    animation: animateNapThe alternate .8s linear infinite;
+}
+
+
 
 .download_img:hover {
     cursor: pointer;
@@ -206,7 +216,7 @@ button.close.close-banner.close-popup-banner {
 }
 
 .social_img {
-    width: 5vw;
+    /* width: 5vw; */
     height: 5vw;
     margin: 0 0.5vw;
 }
@@ -483,7 +493,7 @@ button.close.close-banner.close-popup-banner {
     .download-mobile {
         display: block;
         position: absolute;
-        top: 33%;
+        top: 30.5%;
         left: 50%;
         transform: translate(-50%);
         text-align: center;
@@ -540,7 +550,7 @@ button.close.close-banner.close-popup-banner {
     }
 
     .social img {
-        width: 15vw;
+        /* width: 15vw; */
         height: 13vw;
 
     }
@@ -712,16 +722,21 @@ button.close.close-banner.close-popup-banner {
 
 
     /* translate vi en */
-    .wrapper_translate{
+    .wrapper_translate {
         top: 15px;
         left: 0;
         font-size: 1.2rem !important;
         width: 100px;
     }
 
-    .translate a{
+    .translate a {
         padding: 10px;
         font-size: 1.1rem;
+    }
+
+    .download_button_napthe {
+        width: 19vw;
+        margin-top: 5px;
     }
 
 }
@@ -744,6 +759,23 @@ button.close.close-banner.close-popup-banner {
         transform: scale(1);
     }
 }
+
+
+
+@keyframes animateNapThe {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1.1);
+    }
+}
+
 
 
 /* ------------------------------VN-------------------------- */
